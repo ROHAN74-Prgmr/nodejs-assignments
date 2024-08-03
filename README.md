@@ -3,14 +3,14 @@
 ## Module – 1: Node - JavaScript Fundamental
 
  ### Q1: What is the difference between Java & JavaScript?
-- Java Type is a Compiled language, meaning code is converted into machine-readable format before running. 
-	js Type is an Interpreted language, meaning code is executed directly without compilation.
+- Java is a Compiled language, meaning code is converted into machine-readable format before running. 
+Javascript  is an Interpreted language, meaning code is executed directly without compilation.
 
--	Java Use Cases: Android apps, enterprise software, big data applications. Javascript use Cases: Front-end web development, game development, server-side development (Node.js).
+- Java Use Cases: Android apps, enterprise software, big data applications. Javascript use Cases: Front-end web development, game development, server-side development (Node.js).
 
 - Java is statically typed (data types are defined beforehand). JavaScript is dynamically typed (data types are determined at runtime).
 
--	Java supports multithreading, allowing multiple small programs (threads) to run concurrently inside a process. This enables efficient parallel execution of tasks within the same program. While  Javascript is Single-threaded, meaning it runs one piece of code at a time. However, it uses asynchronous programming to handle concurrent operations, allowing the main thread to continue running while waiting for tasks like network requests or timers to complete.
+ - Java supports multithreading, allowing multiple small programs (threads) to run concurrently inside a process. This enables efficient parallel execution of tasks within the same program. Javascript is Single-threaded, meaning it runs one piece of code at a time. However, it uses asynchronous programming to handle concurrent operations, allowing the main thread to continue running while waiting for tasks like network requests or timers to complete.
 
 ### Q2. What is JavaScript?
 
@@ -51,12 +51,16 @@ let isActive = true;
  4 - undefined
 - A variable that has been declared but not assigned a value.
 Example:
-` let x; // x is undefined
+```
+ let x; // x is undefined
+```
 
 5 - Null
 - Represents the intentional absence of any object value.
 Example:
-` let y = null;
+```
+ let y = null;
+```
 
  6 – Object
 
@@ -91,7 +95,7 @@ console.log(globalVar); // Accessible here too
 ```
 
 2. Function Scope
--	Definition: Variables declared within a function are local to that function and cannot be accessed outside of it. Function scope is created with the function keyword.
+-	Definition: Variables declared within a function are local to that function and cannot be accessed outside of it. These variables can only be accessed within that function.
 ```
 function exampleFunction() {
     let localVar = "I'm a local variable";
@@ -102,7 +106,7 @@ console.log(localVar); // Error: localVar is not defined
 ```
 
 3. Block Scope
--	Definition: Variables declared with let or const within a block (denoted by {}) are local to that block. This includes blocks defined by loops, conditionals, or simply {} braces.
+-	Definition: Variables declared with let or const within a block (denoted by {}) are in block scope. This includes blocks defined by loops, conditionals, or simply {} braces.
 ```
 if (true) {
     let blockVar = "I'm a block-scoped variable";
@@ -113,7 +117,7 @@ console.log(blockVar); // Error: blockVar is not defined
 
 
 ### Q5. What is Callback?
--	A callback is a function passed as an argument to another function, which is then invoked inside the outer function to complete some kind of action or routine.
+-	A callback is a function passed as an argument to another function, which is then invoked inside the outer function to complete some kind of action .
 -	Callbacks are commonly used in asynchronous programming.
 ```
 function fetchData(callback) {
@@ -177,10 +181,10 @@ console.log(user);
 
  ### Q9. What would be the result of 2+5+”3″?
 
--	JavaScript performs the addition operation from left to right.So  because both operands are numbers, so the addition is performed and then  as 7 is a number and "3" is a string JavaScript converts the number to a string and then concatenates the two strings.
+-	JavaScript performs the addition operation from left to right so  because both operands are numbers  addition is performed and then as 7 is a number and "3" is a string JavaScript converts the number to a string and then concatenates the two strings and result would be string "73".
 
  ### Q10. What is the difference between Call & Apply?
--	call method calls a function with a given this value and arguments provided individually 
+-	call method calls a function with a given this value (an object)  and arguments provided individually 
 -	Syntax : func.call(thisArg, arg1, arg2, ...)
 
 -	apply method calls a function with a given this value, and arguments provided as an array
