@@ -4,15 +4,14 @@
 
  Q1. What is Node.js? Where can you use it?
 
-	- It is a cross-platform runtime environment that allows you to execute JavaScript code in  server-side.
-  	- Node.js allows developers to use JavaScript outside of the browser to build  applications.
-	- Node.js comes with NPM which has many open-source libraries that can be easily added into your projects.
+	- Node.js is a cross-platform runtime  environment that lets developers run JavaScript code outside the browser to create  server side  applications .
+	- Node.js comes with NPM which has many open-source libraries that can be easily added to your projects.
  	- Node.js is single-threaded, but it can handle many connections at once because of  asynchronous operations.
- 	- It is used in full-stack applications for building server side logic , for creating RESTful APIs and microservices
+ 	- It is used in full-stack applications for building server side logic, for creating RESTful APIs and microservices
 
  Q2. Explain callback in Node.js.
 	 - A callback in Node.js is a function that is passed as an argument to another function and is executed after the completion of that function.
-	 - Node.js uses asynchronous operations and callbacks to manage tasks like file reading and network requests .
+	 - Node.js uses asynchronous operations and callbacks to manage tasks like file reading and network requests.
 
  	 Example :
  	 const fs = require('fs');
@@ -36,21 +35,19 @@
 	- NPM allows you to define scripts in your package.json file to automate tasks like testing, building, and running your application.
 	 using commands like npm start, npm test, etc.
  
- 
-
  Q5. What are the modules in Node.js? Explain
 	- A module is a reusable block of code that can be used to perform various tasks.
-	-Three types are core modules , local module, third-party modules 
+	-There are three types: core modules, local modules, and third-party modules.
 
- 	1 > Core modules  - Core module are inbuilt modules in node js  which comes when we install node js in 
- 	system and to import those modules require function is used . Fs ,  http , os  , etc  are  core modules .
+ 	1 > Core modules  - Core modules are inbuilt modules in node js  which come when we install node js in 
+ 	the system and to import those modules require function is used . Fs ,  http , os  , etc  are  core modules .
 
-	2> Local modules –  local module are modules created locally in node js app and can be reused across different parts of the project 
+	2> Local modules – Local modules are modules created locally in the node js app and can be reused across different parts of the project. 
 
-	3> Third-party modules- Modules which are available online an can be installed using npm . These modules provide additional 
+	3> Third-party modules- Modules that are available online and can be installed using npm. These modules provide additional 
 	functionality for the applications.
 
- Q6. Create TODO app using FS module with yargs (command line arguments).
+ Q6. Create TODO app using the FS module with yargs (command line arguments).
 
 const fs = require("fs");
 const yargs = require("yargs");
